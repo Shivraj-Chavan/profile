@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    position: relative;
+}
+header{
+  position: absolute;
+  z-index: 10;
+  width:100%;
+}
+.navbar{
+  padding:20px;
+}
+
+.fixed-top{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.navbar-brand img{
+ height:30%;
+ width:30%;
+}
+.nav-link { 
+    font:normal 800 15px/2px cursive;
+    padding:25px;
+    color:linear-gradient(90deg,#4458dc 0%, #e101f5 100%);
+} 
+
+ .navbar-nav a:hover{
+    background:linear-gradient(90deg,#4458dc 0%, #e101f5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.site-main .site-banner .site-title h3{
+  padding-top:40%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+  
+    font-size: 80px;
+}
+.site-main .site-banner .site-title h4{
+font-size: 25px;
+}
+.site-main .site-banner .banner-image > img{
+    padding: 110px 0;
+    width:1400px;
+}
+.site-banner{
+  padding-left: 7%;
+}
+
+.site-main .about{
+    padding: 135px 80px;
+}
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 50px/60px cursive;
+	letter-spacing: 21px;
+
+}
+.site-main .about .paragraph > p{
+    padding:6px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+
+/* buttons */
+.button{
+    padding: 12px 35px;
+    font: normal 500 16px/20px cursive;
+	position: relative;
+    border:3px solid transparent;
+    border-radius: 4px;
+}
+.button.primary-button{
+    background: linear-gradient(90deg,#4458dc 0%, #e101f5 100%);
+    background-clip: padding-box;
+    color: whitesmoke;
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+	color: black;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  bottom:-2px;
+  right:-2px;
+  background: linear-gradient(90deg,#4458dc 0%, #e101f5 100%);
+content:"";
+z-index:-1;
+border-radius: 4px;
+
+}
+
+.button.secondary-button{
+    background:white;
+    background-clip: padding-box;
+    
+}
+.button.secondary-button:hover{
+    background: linear-gradient(90deg,#4458dc 0%, #e101f5 100%);
+    color:whitesmoke;
+    box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+} 
+  
+/* skilll */
+marquee img{
+  height:100px;
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #45505b;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #0563bb;
+}
+
+/* end skills */
+/* sections */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+/* sections */
+/* resume */
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+  }
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+  }
+  
+/* resume
+ */
+/* my project */
+.card{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* end my project */
+
+.preloader{
+  height:40px;
+  width:40px;
+  margin-left: 90%;
+  margin-bottom: 5%;
+}

@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: black;
+            height:auto;
+            width:auto;
+        }
+
+        #digitalclock {
+            position: absolute;
+            background: black;
+            height: 60px;
+            width: 300px;
+            text-align: center;
+            top: 50%;
+            left: 40%;
+            color: white;
+            box-shadow: 3px 3px 10px grey;
+            font-size: 50px;
+        }
+
+        .preloader {
+            position:relative;
+            height: 40px;
+            width: 40px;
+            margin-left:90%;
+            top:80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="digitalclock"></div>
+    <script type="text/javascript">
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+            if (h >= 12) {
+                h = h - 12;
+                session = "PM";
+            }
+            if (h < 10) {
+                h = "0" + h;
+            }
+            if (m < 10) {
+                m = "0" + m;
+            }
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById("digitalclock").innerHTML = h + ":" + m + ":" + s + " " + session;
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+    </script>
+    <div class="preloader d-flex">
+        <a href="../index.html#myprojects" class="d-flex fixed-bottom justify-content-end active">
+            <svg width="40" height="40" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg> </a>
+    </div>
+</body>
+
+</html>

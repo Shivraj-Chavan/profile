@@ -1,0 +1,167 @@
+<html>
+
+<head>
+</head>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.main {
+		height: 100%;
+		width: 100%;
+		background: url(signup.jpg);
+		background-size: cover;
+		position: absolute;
+
+	}
+
+	.form_box {
+		height: 600px;
+		width: 500px;
+		background: white;
+		position: relative;
+		border-radius: 10%;
+		margin: 5% auto;
+		padding: 5px;
+		overflow: hidden;
+		box-shadow: 10px 10px 20px black;
+	}
+
+	.login {
+		width: 250px;
+		margin: 40px auto;
+		position: relative;
+		border-radius: 30px;
+		box-shadow: 5px 5px 5px grey;
+	}
+
+	.button {
+		position: relative;
+		border-radius: 20px;
+		padding: 15px 39px;
+		border: 0;
+		background: transparent;
+
+	}
+
+	#btn {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 120px;
+		height: 100%;
+		background: yellow;
+		border-radius: 30px;
+
+	}
+
+	.inputgroup {
+		top: 180px;
+		position: absolute;
+		width: 300px;
+		transition: .5s;
+	}
+
+	.inputfield {
+		width: 100%;
+		padding: 10px 0;
+		margin: 10px 70px;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid;
+		box-shadow: 5px 5px 5px grey;
+
+	}
+
+	.submitbtn {
+		width: 80%;
+		padding: 10px 30px;
+		border: 0;
+		margin-left: 30%;
+		margin-top: 10%;
+		border-radius: 30px;
+		box-shadow: 5px 5px 5px grey;
+
+	}
+
+	.checkbox {
+		margin-left: 30%;
+		margin-top: 5%;
+	}
+
+	span {
+		color: grey
+	}
+
+	#signin {
+		left: 50px
+	}
+
+	#signup {
+		left: 450px
+	}
+
+	.preloader {
+		position: relative;
+		height: 40px;
+		width: 40px;
+		margin-left: 90%;
+		top: 80%;
+	}
+</style>
+
+<body>
+	<div class="main">
+		<div class="form_box">
+			<div class="login">
+				<div id="btn"></div>
+				<button type="button" class="button" onclick="signin()">Sign In</button>
+				<button type="button" class="button" onclick="signup()">Sign Up</button>
+			</div>
+			<form class="inputgroup" id="signin">
+				<input type="text" placeholder="username" class="inputfield" required>
+				<input type="text" placeholder="Password" class="inputfield" required>
+				<input type="checkbox" class="checkbox"><span>&nbsp remember password</span>
+				<button type="submit" class="submitbtn"> Log in </button>
+			</form>
+			<form class="inputgroup" id="signup">
+				<input type="text" placeholder="username" class="inputfield" required>
+				<input type="text" placeholder="Email ID" class="inputfield" required>
+
+				<input type="text" placeholder="Password" class="inputfield" required>
+				<input type="checkbox" class="checkbox"><span>&nbsp agree to terms and condition</span>
+				<button type="submit" class="submitbtn"> Sign UP </button>
+			</form>
+		</div>
+	</div>
+	<div class="preloader d-flex">
+		<a href="../index.html#myprojects" class="d-flex fixed-bottom justify-content-end active">
+			<svg width="40" height="40" fill="currentColor"
+				class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+				<path
+					d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+			</svg> </a>
+	</div>
+	<script>
+		let a = document.getElementById("signin");
+		let b = document.getElementById("signup");
+		let c = document.getElementById("btn");
+
+		function signup() {
+			a.style.left = "-400px";
+			b.style.left = "50px";
+			c.style.left = "130px";
+		}
+
+		function signin() {
+			a.style.left = "50px";
+			b.style.left = "450px";
+			c.style.left = "0px";
+		}
+	</script>
+</body>
+
+</html>

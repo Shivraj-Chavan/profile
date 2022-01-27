@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .calculator-box {
+            height: 500px;
+            width: 400px;
+            margin: auto;
+            background: white;
+            box-shadow: rgb(65, 64, 71) 10px 10px 20px;
+            border-radius: 30px;
+            margin-top: 5%;
+        }
+
+        #display {
+            height: 50px;
+            width: 350px;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-top: 40px;
+            text-align-last: right;
+            font-size: 200%;
+            border: 0px;
+            border-bottom: 1px solid grey;
+        }
+
+        .button {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: rgb(139, 138, 145) 5px 5px 10px;
+            border: 0px;
+            margin-left: 8%;
+            margin-top: 8%;
+            font-size: 200%;
+
+        }
+
+        .valbutton {
+            background: rgb(216, 134, 57);
+        }
+
+        .cancelbutton {
+            color: white;
+            background: red;
+        }
+
+        .button:hover {
+            background: black;
+            color: white;
+        }
+
+        .preloader {
+            height: 40px;
+            width: 40px;
+            margin-left: 90%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-box">
+        <form name="calculator">
+            <input type="text" id="display" name="display" placeholder="0" readonly><br>
+            <input type="button" class="button" value="7" onclick="calculator.display.value +='7'">
+            <input type="button" class="button" value="8" onclick="calculator.display.value +='8'">
+            <input type="button" class="button" value="9" onclick="calculator.display.value +='9'">
+            <input type="button" class="button valbutton" value="/" onclick="calculator.display.value +='/'">
+            <br>
+            <input type="button" class="button" value="4" onclick="calculator.display.value +='4'">
+            <input type="button" class="button" value="5" onclick="calculator.display.value +='5'">
+            <input type="button" class="button" value="6" onclick="calculator.display.value +='6'">
+            <input type="button" class="button valbutton" value="*" onclick="calculator.display.value +='*'">
+            <br>
+            <input type="button" class="button" value="1" onclick="calculator.display.value +='1'">
+            <input type="button" class="button" value="2" onclick="calculator.display.value +='2'">
+            <input type="button" class="button" value="3" onclick="calculator.display.value +='3'">
+            <input type="button" class="button valbutton" value="+" onclick="calculator.display.value +='+'">
+            <br>
+            <input type="reset" class="button cancelbutton" value="C" onclick="calculator.display.value +=''">
+            <input type="button" class="button" value="0" onclick="calculator.display.value +='0'">
+            <input type="button" class="button" value="="
+                onclick="calculator.display.value =eval(calculator.display.value)">
+            <input type="button" class="button valbutton" value="-" onclick="calculator.display.value +='-'">
+        </form>
+    </div>
+    <div class="preloader fixed-bottom d-flex">
+        <a href="../index.html#myprojects" class="d-flex justify-content-end active">
+            <svg width="40" height="40" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg> </a>
+    </div>
+</body>
+
+</html>
