@@ -12,6 +12,7 @@ header{
 }
 .navbar{
   padding:20px;
+  
 }
 
 .fixed-top{
@@ -34,6 +35,7 @@ header{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 
 .site-main .site-banner .site-title h3{
   padding-top:40%;
