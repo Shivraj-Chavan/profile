@@ -58,7 +58,7 @@ font-size: 25px;
 }
 
 .site-main .about{
-    padding: 135px 80px;
+    padding:100px 30px;
 }
 .site-main .about-area .about-title h2 > span{
     display: block;
@@ -66,9 +66,7 @@ font-size: 25px;
 	letter-spacing: 21px;
 
 }
-.site-main .about .paragraph > p{
-    padding:6px 0;
-}
+
 
 ul{
   list-style: none;
@@ -199,6 +197,11 @@ section {
   }
   
 /* sections */
+
+.content p{
+  padding:0;
+  text-align:justify;  
+}
 /* resume */
 .resume .resume-title {
     font-size: 26px;
@@ -262,6 +265,6 @@ section {
 .preloader{
   height:40px;
   width:40px;
-  margin-left: 90%;
+  margin-left: 85%;
   margin-bottom: 5%;
 }
