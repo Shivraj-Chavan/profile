@@ -32,5 +32,13 @@
     background-size: 100%;
 }
 
+.icons8-gmail {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjNGNhZjUwIiBkPSJNNDUsMTYuMmwtNSwyLjc1bC01LDQuNzVMMzUsNDBoN2MxLjY1NywwLDMtMS4zNDMsMy0zVjE2LjJ6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzFlODhlNSIgZD0iTTMsMTYuMmwzLjYxNCwxLjcxTDEzLDIzLjdWNDBINmMtMS42NTcsMC0zLTEuMzQzLTMtM1YxNi4yeiI+PC9wYXRoPjxwb2x5Z29uIGZpbGw9IiNlNTM5MzUiIHBvaW50cz0iMzUsMTEuMiAyNCwxOS40NSAxMywxMS4yIDEyLDE3IDEzLDIzLjcgMjQsMzEuOTUgMzUsMjMuNyAzNiwxNyI+PC9wb2x5Z29uPjxwYXRoIGZpbGw9IiNjNjI4MjgiIGQ9Ik0zLDEyLjI5OFYxNi4ybDEwLDcuNVYxMS4yTDkuODc2LDguODU5QzkuMTMyLDguMzAxLDguMjI4LDgsNy4yOTgsOGgwQzQuOTI0LDgsMyw5LjkyNCwzLDEyLjI5OHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmJjMDJkIiBkPSJNNDUsMTIuMjk4VjE2LjJsLTEwLDcuNVYxMS4ybDMuMTI0LTIuMzQxQzM4Ljg2OCw4LjMwMSwzOS43NzIsOCw0MC43MDIsOGgwIEM0My4wNzYsOCw0NSw5LjkyNCw0NSwxMi4yOTh6Ij48L3BhdGg+PC9zdmc+') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
 
 /* end Svg icons */
